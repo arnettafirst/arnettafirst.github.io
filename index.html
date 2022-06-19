@@ -14,7 +14,7 @@
   <meta property="og:title" content="The Wedding of Yusa & Yofan" />
   <meta property="og:description"
     content="Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah semoga ridho-Mu tercurah mengiringi pernikahan kami" />
-  <meta property="og:image" content="images/logo.png" />
+  <meta property="og:image" content="img/logo.png" />
   <link rel="canonical" href="https://gega.github.io">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -128,6 +128,16 @@
       text-align: center;
     }
 
+    .btn-open {
+      background-color: #d8ad83;
+      cursor: pointer;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+      color: white;
+      border-radius: 10px;
+      text-align: center;
+    }
+
     .btn-map:hover {
       background-color: #c29b76;
       color: white;
@@ -139,11 +149,56 @@
       font-weight: 600;
       color: #d8ad83;
     }
+
+    .carousel-img {
+      object-fit: cover;
+      object-position: center center;
+      background-position: center;
+    }
+
+    .background-primary {
+      background-color: #d8ad83;
+    }
+
+    .background-timer {
+      background-color: #d8ad83;
+      width: 160px;
+      height: 160px;
+    }
+
+    .background-handshake {
+      background-color: #d8ad83;
+      width: 120px;
+      height: 120px;
+    }
+
+    .background-gray {
+      background-color: #f5f5f5;
+    }
+
+    .background-dark {
+      background-color: #2E2F3A;
+    }
+
+    .background-cincin {
+      background-image: url("img/bg-cincin.jpeg");
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .container-map {
+      width: 100%;
+      max-width: 732px;
+    }
+
+    .h-15px {
+      height: 15px;
+    }
   </style>
 </head>
 
 <body>
-  <audio id="songs" controls autoplay loop style="display: none;">
+  <audio id="songs" controls autoplay loop class="d-none">
     <source src="music/kangen.mp3" type="audio/mpeg">
   </audio>
   <main class="overflow-hidden">
@@ -152,16 +207,16 @@
         data-bs-pause="false">
         <div class="carousel-inner w-100 h-100">
           <div class="carousel-item active w-100 h-100" data-bs-interval="3000">
-            <img src="img/carousel-1.jpg" class="d-block w-100" alt="carousel-1" width="100%" height="100%"
-              style="object-fit: cover; object-position: center center; background-position: center;">
+            <img src="img/carousel-1.jpg" class="d-block w-100 carousel-img" alt="carousel-1" width="100%"
+              height="100%">
           </div>
           <div class="carousel-item w-100 h-100" data-bs-interval="3000">
-            <img src="img/carousel-2.jpg" class="d-block w-100" alt="carousel-2" width="100%" height="100%"
-              style="object-fit: cover; object-position: center center; background-position: center;">
+            <img src="img/carousel-2.jpg" class="d-block w-100 carousel-img" alt="carousel-2" width="100%"
+              height="100%">
           </div>
           <div class="carousel-item w-100 h-100" data-bs-interval="3000">
-            <img src="img/carousel-3.jpg" class="d-block w-100" alt="carousel-3" width="100%" height="100%"
-              style="object-fit: cover; object-position: center center; background-position: center;">
+            <img src="img/carousel-3.jpg" class="d-block w-100 carousel-img" alt="carousel-3" width="100%"
+              height="100%">
           </div>
         </div>
       </div>
@@ -234,7 +289,7 @@
             Senin, 10 Oktober 2022
           </i>
         </p>
-        <div class="d-flex">
+        <div class="d-flex mb-5">
           <img
             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
             alt="chevron" width="20" height="20">
@@ -281,13 +336,18 @@
             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
             alt="chevron" width="20" height="20">
         </div>
+
+        <button class="btn-open d-flex align-items-center justify-content-center gap-2 fs-5 border-0" id="open">
+          <i class='bx bxs-envelope-open'></i>
+          Buka Undangan
+        </button>
       </div>
     </article>
 
-    <div class="w-100" style="height: 15px; background-color: #d8ad83;">
+    <div id="separator" class="w-100 background-primary h-15px d-none">
     </div>
 
-    <article class="container vw-100 py-5">
+    <article id="about" class="container vw-100 py-5 d-none">
       <p class="text-center fs-1">
         ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ
       </p>
@@ -303,7 +363,7 @@
 
       <div class="d-flex align-items-center justify-content-center gap-3 gap-sm-5 flex-column flex-md-row">
         <div data-aos="fade-right" data-aos-duration="2000"
-          class="d-flex flex-column align-items-center rounded-3 p-3 shadow" style="background-color: #f5f5f5;">
+          class="d-flex flex-column align-items-center rounded-3 p-3 shadow background-gray">
           <img src="img/yofan.png" alt="yofan" width="300" height="auto">
           <p class="name">
             Geofany Galindra, S.Kom
@@ -325,7 +385,7 @@
         </div>
         <p data-aos="zoom-in" data-aos-duration="2000" class="and mb-0">&</p>
         <div data-aos="fade-left" data-aos-duration="2000"
-          class="d-flex flex-column align-items-center rounded-3 p-3 shadow" style="background-color: #f5f5f5;">
+          class="d-flex flex-column align-items-center rounded-3 p-3 shadow background-gray">
           <img src="img/yusa.png" alt="yusa" width="300" height="auto">
           <p class="name">
             Nur Firdausa R., S.KM
@@ -348,9 +408,8 @@
       </div>
     </article>
 
-    <article class="vh-100 vw-100 d-flex flex-column justify-content-between"
-      style="background-image: url(img/bg-cincin.jpeg); background-size: cover; background-position: center center;">
-      <div class="w-100" style="height: 15px; background-color: #d8ad83;">
+    <article id="quote" class="vh-100 vw-100 d-flex flex-column justify-content-between background-cincin d-none">
+      <div class="w-100 background-primary h-15px">
       </div>
       <div class="container">
         <div class="border border-5 border-white p-1">
@@ -366,32 +425,35 @@
           </div>
         </div>
       </div>
-      <div class="w-100" style="height: 15px; background-color: #d8ad83;">
+      <div class="w-100 background-primary h-15px">
       </div>
     </article>
 
-    <article class="containter py-5">
+    <article id="times" class="containter py-5 d-none">
       <h2 class="about-us text-center">
         Hari Pernikahan Kami
       </h2>
 
       <div data-aos="zoom-in" data-aos-duration="2000"
         class="d-flex flex-wrap align-items-center justify-content-center gap-3 mb-5">
-        <div id="day" style="background-color: #d8ad83; width: 160px; height: 160px;"
-          class="d-flex align-items-center justify-content-center text-white rounded-3 timer shadow"></div>
-        <div id="hrs" style="background-color: #d8ad83; width: 160px; height: 160px;"
-          class="d-flex align-items-center justify-content-center text-white rounded-3 timer shadow"></div>
-        <div id="mins" style="background-color: #d8ad83; width: 160px; height: 160px;"
-          class="d-flex align-items-center justify-content-center text-white rounded-3 timer shadow"></div>
-        <div id="secs" style="background-color: #d8ad83; width: 160px; height: 160px;"
-          class="d-flex align-items-center justify-content-center text-white rounded-3 timer shadow"></div>
+        <div id="day"
+          class="d-flex align-items-center justify-content-center text-white rounded-3 timer shadow background-timer">
+        </div>
+        <div id="hrs"
+          class="d-flex align-items-center justify-content-center text-white rounded-3 timer shadow background-timer">
+        </div>
+        <div id="mins"
+          class="d-flex align-items-center justify-content-center text-white rounded-3 timer shadow background-timer">
+        </div>
+        <div id="secs"
+          class="d-flex align-items-center justify-content-center text-white rounded-3 timer shadow background-timer">
+        </div>
       </div>
 
       <div class="d-flex justify-content-center">
         <div data-aos="fade-up" data-aos-duration="2000"
-          class="d-flex flex-column align-items-center rounded-3 p-3 shadow" style="background-color: #f5f5f5;">
-          <div style="background-color: #d8ad83; width: 120px; height: 120px;"
-            class="rounded-circle d-flex align-items-center justify-content-center">
+          class="d-flex flex-column align-items-center rounded-3 p-3 shadow background-gray">
+          <div class="rounded-circle d-flex align-items-center justify-content-center background-handshake">
             <img src="img/handshake.png" alt="handshake" width="100" height="74">
           </div>
 
@@ -437,7 +499,7 @@
             </strong>
           </p>
 
-          <div data-aos="fade-up" data-aos-duration="2000" style="width: 100%; max-width: 732px">
+          <div data-aos="fade-up" data-aos-duration="2000" class="container-map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198.77743588563212!2d112.65165881670512!3d-7.149571429760794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd801051b9d94e7%3A0x87758756b2c045f7!2spos%20lumpur%20Gg2%20b!5e1!3m2!1sen!2sid!4v1655477969718!5m2!1sen!2sid"
               width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -467,14 +529,14 @@
       </div>
     </article>
 
-    <article class="container py-5">
+    <article id="gift" class="container py-5 d-none">
       <h2 class="about-us text-center">
         Wedding Gift
       </h2>
       <div class="row">
         <div data-aos="fade-right" data-aos-duration="2000" class="col-12 col-md-6 mb-5">
-          <div class="d-flex flex-column align-items-center justify-content-between rounded-3 p-3 h-100 shadow"
-            style="background-color: #f5f5f5;">
+          <div
+            class="d-flex flex-column align-items-center justify-content-between rounded-3 p-3 h-100 shadow background-gray">
             <p class="fs-2">
               Rekening
             </p>
@@ -516,8 +578,8 @@
         </div>
 
         <div data-aos="fade-left" data-aos-duration="2000" class="col-12 col-md-6 mb-5">
-          <div class="d-flex flex-column align-items-center justify-content-between rounded-3 p-3 h-100 shadow"
-            style="background-color: #f5f5f5;">
+          <div
+            class="d-flex flex-column align-items-center justify-content-between rounded-3 p-3 h-100 shadow background-gray">
             <div class="d-flex flex-column align-items-center">
               <p class="fs-2">
                 E-wallet
@@ -550,28 +612,11 @@
     </article>
 
   </main>
-  <footer class="w-100 text-white d-flex justify-content-center py-3" style="background-color: #2E2F3A;">
+  <footer id="footer" class="w-100 text-white d-flex justify-content-center py-3 background-dark d-none">
     <p class="mb-0">
       &copy; 2022 Made with ❤️ by Geofany Galindra
     </p>
   </footer>
-  <div class="modal fade" id="welcomeModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="welcomeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-body d-flex flex-column align-items-center justify-content-center gap-4">
-          <p class="modal-title text-black text-center">
-            Welcome to Our Wedding
-          </p>
-          <button class="btn-map d-flex align-items-center justify-content-center gap-2 fs-5 border-0"
-            data-bs-dismiss="modal" id="open">
-            <i class='bx bxs-envelope-open'></i>
-            Buka Undangan
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
@@ -610,15 +655,23 @@
     timer = setInterval(showRemaining, 1000);
   </script>
   <script>
-    AOS.init();
-    $(document).ready(function () {
-      $("#welcomeModal").modal('show');
-    }); 
-  </script>
-  <script>
-    var z = document.querySelector('#open');
-    z.addEventListener("click", function (event) {
+    var openButton = document.querySelector('#open');
+    openButton.addEventListener("click", function (event) {
+      separator = document.getElementById("separator");
+      about = document.getElementById("about");
+      quote = document.getElementById("quote");
+      times = document.getElementById("times");
+      gift = document.getElementById("gift");
+      footer = document.getElementById("footer");
+      separator.classList.remove("d-none");
+      about.classList.remove("d-none");
+      quote.classList.remove("d-none");
+      times.classList.remove("d-none");
+      gift.classList.remove("d-none");
+      footer.classList.remove("d-none");
+      AOS.init();
       document.getElementById("songs").play();
+      separator.scrollIntoView();
     });
   </script>
 </body>

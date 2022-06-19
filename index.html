@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Wedding of Yusa & Yofan</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="description"
+    content="Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah semoga ridho-Mu tercurah mengiringi pernikahan kami" />
+  <meta property="og:url" content="gega.github.io" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="The Wedding of Yusa & Yofan" />
+  <meta property="og:description"
+    content="Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah semoga ridho-Mu tercurah mengiringi pernikahan kami" />
+  <meta property="og:image" content="images/logo.png" />
+  <link rel="canonical" href="https://gega.github.io">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Dancing+Script&family=Playfair+Display:ital,wght@0,500;1,400&display=swap');
+
+    ::-webkit-scrollbar-thumb {
+      border: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      -webkit-border-radius: 8px;
+      border-radius: 8px;
+      min-height: 40px;
+      background-color: rgba(54, 45, 35, 0.6);
+    }
+
+    ::-webkit-scrollbar {
+      background: transparent;
+      height: 8px;
+      width: 8px;
+    }
+
+    h1 {
+      font-family: 'Clicker Script', cursive;
+      font-weight: 900;
+      font-size: 3.5rem
+    }
+
+    h2.name {
+      font-family: 'Dancing Script', cursive;
+      font-size: 5.5rem;
+    }
+
+    p.date {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+    }
+
+    .container p {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+
+    .about-us {
+      font-family: 'Dancing Script', cursive;
+      font-size: 4rem;
+      font-weight: 600;
+      color: #d8ad83;
+    }
+
+    p.name {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2rem;
+      color: #d8ad83;
+    }
+
+    p.and {
+      font-family: 'Clicker Script', cursive;
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    @media only screen and (max-width: 511px) {
+      p.quote {
+        font-family: 'Dancing Script', cursive;
+        font-size: 1rem
+      }
+    }
+
+    @media only screen and (min-width: 512px) and (max-width: 767px) {
+      p.quote {
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.5rem
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      p.quote {
+        font-family: 'Dancing Script', cursive;
+        font-size: 2rem
+      }
+    }
+
+    .timer {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+    }
+
+    .location-title {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2rem;
+      color: #d8ad83;
+    }
+
+    .icon {
+      font-size: 4rem;
+      color: #d8ad83;
+    }
+
+    .btn-map {
+      background-color: #d8ad83;
+      cursor: pointer;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+      color: white;
+      border-radius: 10px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .btn-map:hover {
+      background-color: #c29b76;
+      color: white;
+    }
+
+    .modal-title {
+      font-family: 'Dancing Script', cursive;
+      font-size: 5rem;
+      font-weight: 600;
+      color: #d8ad83;
+    }
+  </style>
+</head>
+
+<body>
+  <audio id="songs" controls autoplay loop style="display: none;">
+    <source src="music/kangen.mp3" type="audio/mpeg">
+  </audio>
+  <main class="overflow-hidden">
+    <article class="position-relative">
+      <div id="carouselExampleSlidesOnly" class="carousel slide vh-100 vw-100" data-bs-ride="carousel"
+        data-bs-pause="false">
+        <div class="carousel-inner w-100 h-100">
+          <div class="carousel-item active w-100 h-100" data-bs-interval="3000">
+            <img src="img/carousel-1.jpg" class="d-block w-100" alt="carousel-1" width="100%" height="100%"
+              style="object-fit: cover; object-position: center center; background-position: center;">
+          </div>
+          <div class="carousel-item w-100 h-100" data-bs-interval="3000">
+            <img src="img/carousel-2.jpg" class="d-block w-100" alt="carousel-2" width="100%" height="100%"
+              style="object-fit: cover; object-position: center center; background-position: center;">
+          </div>
+          <div class="carousel-item w-100 h-100" data-bs-interval="3000">
+            <img src="img/carousel-3.jpg" class="d-block w-100" alt="carousel-3" width="100%" height="100%"
+              style="object-fit: cover; object-position: center center; background-position: center;">
+          </div>
+        </div>
+      </div>
+      <div
+        class="position-absolute vh-100 vw-100 text-white d-flex justify-content-center align-items-center flex-column top-0 left-0">
+        <div class="d-flex mb-3">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+        </div>
+        <h1>
+          The Wedding of
+        </h1>
+        <h2 class="name d-none d-sm-block">
+          Yusa & Yofan
+        </h2>
+        <h2 class="name d-sm-none mb-0">
+          Yusa
+        </h2>
+        <h2 class="name d-sm-none mb-0">
+          &
+        </h2>
+        <h2 class="name d-sm-none">
+          Yofan
+        </h2>
+        <p class="date">
+          <i>
+            Senin, 10 Oktober 2022
+          </i>
+        </p>
+        <div class="d-flex">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
+            alt="chevron" width="20" height="20">
+        </div>
+      </div>
+    </article>
+
+    <div class="w-100" style="height: 15px; background-color: #d8ad83;">
+    </div>
+
+    <article class="container vw-100 py-5">
+      <p class="text-center fs-1">
+        ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ
+      </p>
+
+      <p class="text-center">
+        Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah semoga ridho-Mu tercurah
+        mengiringi pernikahan kami
+      </p>
+
+      <h2 class="about-us text-center">
+        Tentang Kami
+      </h2>
+
+      <div class="d-flex align-items-center justify-content-center gap-3 gap-sm-5 flex-column flex-md-row">
+        <div data-aos="fade-right" data-aos-duration="2000"
+          class="d-flex flex-column align-items-center rounded-3 p-3 shadow" style="background-color: #f5f5f5;">
+          <img src="img/yofan.png" alt="yofan" width="300" height="auto">
+          <p class="name">
+            Geofany Galindra, S.Kom
+          </p>
+          <p class="mb-0">
+            <strong>
+              Putra Dari
+            </strong>
+          </p>
+          <p class="mb-0">
+            Alm. Bapak Agus Tri Raharjo
+          </p>
+          <p class="mb-0">
+            &
+          </p>
+          <p class="mb-0">
+            Ibu Ida Widiarti
+          </p>
+        </div>
+        <p data-aos="zoom-in" data-aos-duration="2000" class="and mb-0">&</p>
+        <div data-aos="fade-left" data-aos-duration="2000"
+          class="d-flex flex-column align-items-center rounded-3 p-3 shadow" style="background-color: #f5f5f5;">
+          <img src="img/yusa.png" alt="yusa" width="300" height="auto">
+          <p class="name">
+            Nur Firdausa R., S.KM
+          </p>
+          <p class="mb-0">
+            <strong>
+              Putri Dari
+            </strong>
+          </p>
+          <p class="mb-0">
+            Bapak Maratim
+          </p>
+          <p class="mb-0">
+            &
+          </p>
+          <p class="mb-0">
+            Ibu Hindun Juwariyah
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <article class="vh-100 vw-100 d-flex flex-column justify-content-between"
+      style="background-image: url(img/bg-cincin.jpeg); background-size: cover; background-position: center center;">
+      <div class="w-100" style="height: 15px; background-color: #d8ad83;">
+      </div>
+      <div class="container">
+        <div class="border border-5 border-white p-1">
+          <div class="border border-5 border-white p-5 d-flex align-items-center justify-content-center flex-column">
+            <p class="quote text-white text-center">
+              " Dan di antara tanda-tanda kekuasaan-Nya diciptakan-Nya untukmu pasangan hidup dari jenismu sendiri
+              supaya kamu dapat ketenangan hati dan dijadikannya kasih sayang di antara kamu. Sesungguhnya yang demikian
+              menjadi tanda-tanda kebesaran-Nya bagi orang-orang yang berpikir. "
+            </p>
+            <p class="quote text-white">
+              ~QS. Ar-Rum Ayat 21~
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-100" style="height: 15px; background-color: #d8ad83;">
+      </div>
+    </article>
+
+    <article class="containter py-5">
+      <h2 class="about-us text-center">
+        Hari Pernikahan Kami
+      </h2>
+
+      <div data-aos="zoom-in" data-aos-duration="2000"
+        class="d-flex flex-wrap align-items-center justify-content-center gap-3 mb-5">
+        <div id="day" style="background-color: #d8ad83; width: 160px; height: 160px;"
+          class="d-flex align-items-center justify-content-center text-white rounded-3 timer shadow"></div>
+        <div id="hrs" style="background-color: #d8ad83; width: 160px; height: 160px;"
+          class="d-flex align-items-center justify-content-center text-white rounded-3 timer shadow"></div>
+        <div id="mins" style="background-color: #d8ad83; width: 160px; height: 160px;"
+          class="d-flex align-items-center justify-content-center text-white rounded-3 timer shadow"></div>
+        <div id="secs" style="background-color: #d8ad83; width: 160px; height: 160px;"
+          class="d-flex align-items-center justify-content-center text-white rounded-3 timer shadow"></div>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <div data-aos="fade-up" data-aos-duration="2000"
+          class="d-flex flex-column align-items-center rounded-3 p-3 shadow" style="background-color: #f5f5f5;">
+          <div style="background-color: #d8ad83; width: 120px; height: 120px;"
+            class="rounded-circle d-flex align-items-center justify-content-center">
+            <img src="img/handshake.png" alt="handshake" width="100" height="74">
+          </div>
+
+          <h3 class="location-title">
+            <i>
+              Akad & Resepsi Pernikahan
+            </i>
+          </h3>
+
+          <div class="d-flex align-items-center justify-content-around gap-4">
+            <div class="d-flex flex-column text-center">
+              <hr>
+              <i class="bx bxs-calendar icon"></i>
+              <p class="date">
+                <i>
+                  Senin, 10 Oktober 2022
+                </i>
+              </p>
+              <hr>
+            </div>
+            <div class="d-flex flex-column text-center">
+              <hr>
+              <i class="bx bxs-time icon"></i>
+              <p class="date">
+                <i>
+                  13.00 WIB - 15.00 WIB
+                </i>
+              </p>
+              <hr>
+            </div>
+          </div>
+
+          <h2 class="about-us">
+            Lokasi
+          </h2>
+          <p class="date text-center">
+            Jl. Sindujoyo Gg. XVI, Kec. Gresik, Kabupaten Gresik, Jawa Timur
+          </p>
+
+          <p>
+            <strong>
+              (*Note: Yang Membawa Mobil Tempat Parkir Ada Di Pasar Krempyeng)
+            </strong>
+          </p>
+
+          <div data-aos="fade-up" data-aos-duration="2000" style="width: 100%; max-width: 732px">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198.77743588563212!2d112.65165881670512!3d-7.149571429760794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd801051b9d94e7%3A0x87758756b2c045f7!2spos%20lumpur%20Gg2%20b!5e1!3m2!1sen!2sid!4v1655477969718!5m2!1sen!2sid"
+              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <a href="https://goo.gl/maps/sVaLYgnBna9youZA8" rel="nofollow noopener noreferrer external"
+            class="btn-map d-flex align-items-center justify-content-center gap-1 mb-3" target="_blank">
+            <i class='bx bxs-map fs-4'></i>
+            <p class="mb-0 fs-5">
+              <strong>
+                BUKA PETA
+              </strong>
+            </p>
+          </a>
+
+          <a href="https://goo.gl/maps/KVwTGc3NhYHMSZLA9" rel="nofollow noopener noreferrer external"
+            class="btn-map d-flex align-items-center justify-content-center gap-1" target="_blank">
+            <i class='bx bxs-car fs-4'></i>
+            <p class="mb-0 fs-5">
+              <strong>
+                LOKASI PARKIR MOBIL
+              </strong>
+            </p>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <article class="container py-5">
+      <h2 class="about-us text-center">
+        Wedding Gift
+      </h2>
+      <div class="row">
+        <div data-aos="fade-right" data-aos-duration="2000" class="col-12 col-md-6 mb-5">
+          <div class="d-flex flex-column align-items-center justify-content-between rounded-3 p-3 h-100 shadow"
+            style="background-color: #f5f5f5;">
+            <p class="fs-2">
+              Rekening
+            </p>
+
+            <div class="d-flex flex-wrap items-center justify-content-center gap-4">
+              <img src="img/bca.png" alt="bca" width="200" height="65">
+
+              <div>
+                <p class="mb-0">
+                  2640 3999 05
+                </p>
+                <p>
+                  a.n Geofany Galindra
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex flex-wrap items-center justify-content-center gap-4">
+              <img src="img/bni.png" alt="bni" width="200" height="65">
+
+              <div>
+                <p class="mb-0">
+                  120 822 4532
+                </p>
+                <p>
+                  a.n Geofany Galindra
+                </p>
+              </div>
+            </div>
+
+            <a href="https://wa.me/+6282257030340" rel="nofollow noopener noreferrer" target="_blank"
+              class="btn-map d-flex align-items-center justify-content-center gap-1">
+              <i class='bx bxl-whatsapp fs-4'></i>
+              <p class="mb-0 fs-6">
+                Konfirmasi WhatsApp
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <div data-aos="fade-left" data-aos-duration="2000" class="col-12 col-md-6 mb-5">
+          <div class="d-flex flex-column align-items-center justify-content-between rounded-3 p-3 h-100 shadow"
+            style="background-color: #f5f5f5;">
+            <div class="d-flex flex-column align-items-center">
+              <p class="fs-2">
+                E-wallet
+              </p>
+              <div class="d-flex flex-wrap align-items-center justify-content-center gap-2">
+                <img src="img/linkAja.png" alt="link-aja" width="50" height="50">
+                <img src="img/dana.png" alt="dana" width="80" height="80">
+                <img src="img/gopay.png" alt="gopay" width="100" height="21">
+                <img src="img/ovo.png" alt="ovo" width="100" height="41.25">
+                <img src="img/shopeePay.png" alt="shopeePay" width="100" height="66.5">
+              </div>
+              <p class="mb-0">
+                0822 5703 0340
+              </p>
+              <p>
+                a.n Geofany Galindra
+              </p>
+            </div>
+
+            <a href="https://wa.me/+6282257030340" rel="nofollow noopener noreferrer" target="_blank"
+              class="btn-map d-flex align-items-center justify-content-center gap-1">
+              <i class='bx bxl-whatsapp fs-4'></i>
+              <p class="mb-0 fs-6">
+                Konfirmasi WhatsApp
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </main>
+  <footer class="w-100 text-white d-flex justify-content-center py-3" style="background-color: #2E2F3A;">
+    <p class="mb-0">
+      &copy; 2022 Made with ❤️ by Geofany Galindra
+    </p>
+  </footer>
+  <div class="modal fade" id="welcomeModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="welcomeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body d-flex flex-column align-items-center justify-content-center gap-4">
+          <p class="modal-title text-black text-center">
+            Welcome to Our Wedding
+          </p>
+          <button class="btn-map d-flex align-items-center justify-content-center gap-2 fs-5 border-0"
+            data-bs-dismiss="modal" id="open">
+            <i class='bx bxs-envelope-open'></i>
+            Buka Undangan
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    var end = new Date('10/10/2022 12:0 PM');
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+    var timer;
+
+    function showRemaining() {
+      var now = new Date();
+      var distance = end - now;
+      if (distance < 0) {
+
+        clearInterval(timer);
+        document.getElementById('day').innerHTML = '0';
+
+        return;
+      }
+      var days = Math.floor(distance / _day);
+      var hours = Math.floor((distance % _day) / _hour);
+      var minutes = Math.floor((distance % _hour) / _minute);
+      var seconds = Math.floor((distance % _minute) / _second);
+
+      document.getElementById('day').innerHTML = days + ' Hari';
+      document.getElementById('hrs').innerHTML = hours + ' Jam';
+      document.getElementById('mins').innerHTML = minutes + ' Menit';
+      document.getElementById('secs').innerHTML = seconds + ' Detik';
+    }
+
+    timer = setInterval(showRemaining, 1000);
+  </script>
+  <script>
+    AOS.init();
+    $(document).ready(function () {
+      $("#welcomeModal").modal('show');
+    }); 
+  </script>
+  <script>
+    var z = document.querySelector('#open');
+    z.addEventListener("click", function (event) {
+      document.getElementById("songs").play();
+    });
+  </script>
+</body>
+
+</html>

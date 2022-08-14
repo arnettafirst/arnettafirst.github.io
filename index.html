@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Wedding of Yusa & Yofan</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="robots" content="noindex nofollow" />
   <meta name="description"
     content="Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah semoga ridho-Mu tercurah mengiringi pernikahan kami" />
   <meta property="og:url" content="gega.github.io" />
@@ -48,6 +49,11 @@
     h2.name {
       font-family: 'Dancing Script', cursive;
       font-size: 5.5rem;
+    }
+
+    h3.name {
+      font-family: 'Dancing Script', cursive;
+      font-size: 4rem;
     }
 
     p.date {
@@ -129,18 +135,39 @@
     }
 
     .btn-open {
-      background-color: #d8ad83;
+      background-color: rgb(216, 173, 131);
       cursor: pointer;
       padding: 0.75rem 1rem;
       text-decoration: none;
       color: white;
       border-radius: 10px;
       text-align: center;
+
+      box-shadow: 0 0 0 0 rgb(216, 173, 131);
+      transform: scale(1);
+      animation: pulse 2s infinite;
     }
 
     .btn-map:hover {
       background-color: #c29b76;
       color: white;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(216, 173, 131, 0.7);
+      }
+
+      70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(216, 173, 131, 0);
+      }
+
+      100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(216, 173, 131, 0);
+      }
     }
 
     .modal-title {
@@ -181,7 +208,7 @@
     }
 
     .background-cincin {
-      background-image: url("img/bg-cincin.jpeg");
+      background-image: url("img/bg-cincin.png");
       background-size: cover;
       background-position: center center;
     }
@@ -199,7 +226,7 @@
 
 <body>
   <audio id="songs" controls autoplay loop class="d-none">
-    <source src="music/kangen.mp3" type="audio/mpeg">
+    <source src="music/cinta.mp3" type="audio/mpeg">
   </audio>
   <main class="overflow-hidden">
     <article class="position-relative">
@@ -222,7 +249,7 @@
       </div>
       <div
         class="position-absolute vh-100 vw-100 text-white d-flex justify-content-center align-items-center flex-column top-0 left-0">
-        <div class="d-flex mb-3">
+        <div class="d-sm-flex mb-3 d-none">
           <img
             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
             alt="chevron" width="20" height="20">
@@ -275,21 +302,21 @@
         <h2 class="name d-none d-sm-block">
           Yusa & Yofan
         </h2>
-        <h2 class="name d-sm-none mb-0">
+        <h3 class="name d-sm-none mb-0">
           Yusa
-        </h2>
-        <h2 class="name d-sm-none mb-0">
+        </h3>
+        <h3 class="name d-sm-none mb-0">
           &
-        </h2>
-        <h2 class="name d-sm-none">
+        </h3>
+        <h3 class="name d-sm-none">
           Yofan
-        </h2>
+        </h3>
         <p class="date">
           <i>
-            Senin, 10 Oktober 2022
+            Jum'at, 18 November 2022
           </i>
         </p>
-        <div class="d-flex mb-5">
+        <div class="d-sm-flex mb-3 d-none">
           <img
             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
             alt="chevron" width="20" height="20">
@@ -335,6 +362,15 @@
           <img
             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
             alt="chevron" width="20" height="20">
+        </div>
+
+        <div class="bg-white rounded-3 px-5 py-2 mb-3 d-flex flex-column justify-content-start align-items-center" style="color: black;">
+          <p>
+            Kepada Yth.
+          </p>
+          <p id="kepada" class="text-capitalize">
+            
+          </p>
         </div>
 
         <button class="btn-open d-flex align-items-center justify-content-center gap-2 fs-5 border-0" id="open">
@@ -364,7 +400,7 @@
       <div class="d-flex align-items-center justify-content-center gap-3 gap-sm-5 flex-column flex-md-row">
         <div data-aos="fade-right" data-aos-duration="2000"
           class="d-flex flex-column align-items-center rounded-3 p-3 shadow background-gray">
-          <img src="img/yofan.png" alt="yofan" width="300" height="auto">
+          <img src="img/yofan1.png" alt="yofan" width="300" height="auto">
           <p class="name">
             Geofany Galindra, S.Kom
           </p>
@@ -386,7 +422,7 @@
         <p data-aos="zoom-in" data-aos-duration="2000" class="and mb-0">&</p>
         <div data-aos="fade-left" data-aos-duration="2000"
           class="d-flex flex-column align-items-center rounded-3 p-3 shadow background-gray">
-          <img src="img/yusa.png" alt="yusa" width="300" height="auto">
+          <img src="img/yusa1.png" alt="yusa" width="300" height="auto">
           <p class="name">
             Nur Firdausa R., S.KM
           </p>
@@ -469,7 +505,7 @@
               <i class="bx bxs-calendar icon"></i>
               <p class="date">
                 <i>
-                  Senin, 10 Oktober 2022
+                  Jum'at, 18 November 2022
                 </i>
               </p>
               <hr>
@@ -490,7 +526,7 @@
             Lokasi
           </h2>
           <p class="date text-center">
-            Jl. Sindujoyo Gg. XVI, Kec. Gresik, Kabupaten Gresik, Jawa Timur
+            Jl. Sindujoyo Gg. XVIA No. 11, Kec. Gresik, Kabupaten Gresik, Jawa Timur
           </p>
 
           <p>
@@ -529,12 +565,65 @@
       </div>
     </article>
 
+    <article id="gallery" class="container mx-auto py-5 d-none">
+      <h2 class="about-us text-center">
+        Gallery
+      </h2>
+      <div class="row">
+        <div class="col-6 col-md-3" data-aos="fade-right" data-aos-duration="2000">
+          <img src="img/gal-1.jpg" alt="gal-1" width="100%" height="auto">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-right" data-aos-duration="2000">
+          <img src="img/gal-2.jpg" alt="gal-2" width="100%" height="auto">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-left" data-aos-duration="2000">
+          <img src="img/gal-3.jpg" alt="gal-3" width="100%" height="auto">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-left" data-aos-duration="2000">
+          <img src="img/gal-4.jpg" alt="gal-4" width="100%" height="auto">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-right" data-aos-duration="2000">
+          <img src="img/gal-5.jpg" alt="gal-5" width="100%" height="auto">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-right" data-aos-duration="2000">
+          <img src="img/gal-6.jpg" alt="gal-6" width="100%" height="auto">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-left" data-aos-duration="2000">
+          <img src="img/gal-7.jpg" alt="gal-7" width="100%" height="auto">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-left" data-aos-duration="2000">
+          <img src="img/gal-8.jpg" alt="gal-8" width="100%" height="auto">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-right" data-aos-duration="2000">
+          <img src="img/gal-9.jpg" alt="gal-9" width="100%" height="auto">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-right" data-aos-duration="2000">
+          <img src="img/gal-10.jpg" alt="gal-10" width="100%" height="auto">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-left" data-aos-duration="2000">
+          <img src="img/gal-11.jpg" alt="gal-11" width="100%" height="auto">
+        </div>
+        <div class="col-6 col-md-3" data-aos="fade-left" data-aos-duration="2000">
+          <img src="img/gal-12.jpg" alt="gal-12" width="100%" height="auto">
+        </div>
+        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-duration="2000">
+          <img src="img/gal-13.jpg" alt="gal-13" width="100%" height="auto">
+        </div>
+        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-duration="2000">
+          <img src="img/gal-14.jpg" alt="gal-14" width="100%" height="auto">
+        </div>
+        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-duration="2000">
+          <img src="img/gal-15.jpg" alt="gal-15" width="100%" height="auto">
+        </div>
+      </div>
+    </article>
+
     <article id="gift" class="container py-5 d-none">
       <h2 class="about-us text-center">
         Wedding Gift
       </h2>
       <div class="row">
-        <div data-aos="fade-right" data-aos-duration="2000" class="col-12 col-md-6 mb-5">
+        <div data-aos="fade-right" data-aos-duration="2000" class="col-12 mb-5">
           <div
             class="d-flex flex-column align-items-center justify-content-between rounded-3 p-3 h-100 shadow background-gray">
             <p class="fs-2">
@@ -545,9 +634,12 @@
               <img src="img/bca.png" alt="bca" width="200" height="65">
 
               <div>
-                <p class="mb-0">
-                  2640 3999 05
-                </p>
+                <div class="d-flex align-items-center gap-2">
+                  <p class="mb-0">
+                    2640 3999 05
+                  </p>
+                  <i onclick="copyBca()" class="bx bxs-copy-alt mt-2 h4" style="cursor: pointer;"></i>
+                </div>
                 <p>
                   a.n Geofany Galindra
                 </p>
@@ -558,45 +650,16 @@
               <img src="img/bni.png" alt="bni" width="200" height="65">
 
               <div>
-                <p class="mb-0">
-                  120 822 4532
-                </p>
+                <div class="d-flex align-items-center gap-2">
+                  <p class="mb-0">
+                    120 822 4532
+                  </p>
+                  <i onclick="copyBni()" class="bx bxs-copy-alt mt-2 h4" style="cursor: pointer;"></i>
+                </div>
                 <p>
                   a.n Geofany Galindra
                 </p>
               </div>
-            </div>
-
-            <a href="https://wa.me/+6282257030340" rel="nofollow noopener noreferrer" target="_blank"
-              class="btn-map d-flex align-items-center justify-content-center gap-1">
-              <i class='bx bxl-whatsapp fs-4'></i>
-              <p class="mb-0 fs-6">
-                Konfirmasi WhatsApp
-              </p>
-            </a>
-          </div>
-        </div>
-
-        <div data-aos="fade-left" data-aos-duration="2000" class="col-12 col-md-6 mb-5">
-          <div
-            class="d-flex flex-column align-items-center justify-content-between rounded-3 p-3 h-100 shadow background-gray">
-            <div class="d-flex flex-column align-items-center">
-              <p class="fs-2">
-                E-wallet
-              </p>
-              <div class="d-flex flex-wrap align-items-center justify-content-center gap-2">
-                <img src="img/linkAja.png" alt="link-aja" width="50" height="50">
-                <img src="img/dana.png" alt="dana" width="80" height="80">
-                <img src="img/gopay.png" alt="gopay" width="100" height="21">
-                <img src="img/ovo.png" alt="ovo" width="100" height="41.25">
-                <img src="img/shopeePay.png" alt="shopeePay" width="100" height="66.5">
-              </div>
-              <p class="mb-0">
-                0822 5703 0340
-              </p>
-              <p>
-                a.n Geofany Galindra
-              </p>
             </div>
 
             <a href="https://wa.me/+6282257030340" rel="nofollow noopener noreferrer" target="_blank"
@@ -624,7 +687,7 @@
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    var end = new Date('10/10/2022 12:0 PM');
+    var end = new Date('11/18/2022 1:0 PM');
     var _second = 1000;
     var _minute = _second * 60;
     var _hour = _minute * 60;
@@ -661,18 +724,35 @@
       about = document.getElementById("about");
       quote = document.getElementById("quote");
       times = document.getElementById("times");
+      gallery = document.getElementById("gallery");
       gift = document.getElementById("gift");
       footer = document.getElementById("footer");
       separator.classList.remove("d-none");
       about.classList.remove("d-none");
       quote.classList.remove("d-none");
       times.classList.remove("d-none");
+      gallery.classList.remove("d-none");
       gift.classList.remove("d-none");
       footer.classList.remove("d-none");
       AOS.init();
       document.getElementById("songs").play();
       separator.scrollIntoView();
     });
+  </script>
+  <script>
+    function copyBca() {
+      navigator.clipboard.writeText("2640399905");
+      window.alert("Berhasil Menyalin Nomor Rekening BCA");
+    }
+
+    function copyBni() {
+      navigator.clipboard.writeText("1208224532");
+      window.alert("Berhasil Menyalin Nomor Rekening BNI");
+    }
+
+    const to = new URLSearchParams(window.location.search);
+    var kepada = document.getElementById("kepada");
+    kepada.textContent = to.get('to');;
   </script>
 </body>
 

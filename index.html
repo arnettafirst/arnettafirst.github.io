@@ -5,15 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Wedding of Yusa & Yofan</title>
+  <title>The Wedding of Netta & Kresna</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <meta name="robots" content="noindex nofollow" />
   <meta name="description"
     content="Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah semoga ridho-Mu tercurah mengiringi pernikahan kami" />
   <meta property="og:url" content="firdausayusa.github.io" />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="The Wedding of Yusa & Yofan">
-  <meta property="og:title" content="The Wedding of Yusa & Yofan" />
+  <meta property="og:site_name" content="The Wedding of Netta & Kresna">
+  <meta property="og:title" content="The Wedding of Netta & Kresna" />
   <meta property="og:description"
     content="Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah semoga ridho-Mu tercurah mengiringi pernikahan kami" />
   <meta property="og:image" itemprop="image" content="https://firdausayusa.github.io/img/logo.png" />
@@ -24,11 +24,16 @@
   <link rel="canonical" href="https://firdausayusa.github.io">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Dancing+Script&family=Playfair+Display:ital,wght@0,500;1,400&display=swap');
-
+    @font-face {
+        font-family: "Canela Regular";
+        src: url(fonts/CanTest-Regular.woff2) format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap
+    }
+    
     ::-webkit-scrollbar-thumb {
       border: none;
       -webkit-box-shadow: none;
@@ -46,92 +51,93 @@
     }
 
     h1, .h1 {
-      font-family: 'Clicker Script', cursive;
+      font-family: 'Canela Regular', cursive;
       font-weight: 900;
       font-size: 3.5rem
     }
 
     h2.name {
-      font-family: 'Dancing Script', cursive;
+      font-family: 'Canela Regular', cursive;
       font-size: 5.5rem;
     }
 
     h3.name {
-      font-family: 'Dancing Script', cursive;
+      font-family: 'Canela Regular', cursive;
       font-size: 4rem;
     }
 
     .container p {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Georgia', cursive;
       font-size: 1.25rem;
       font-weight: 400;
     }
 
     p.name-closing {
-      font-family: 'Dancing Script', cursive;
+      font-family: 'Canela Regular', cursive;
       font-size: 3rem;
       font-weight: 500;
       color: #d8ad83;
     }
 
     p.date {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Georgia', cursive;
       font-size: 1.5rem;
     }
 
     .about-us {
-      font-family: 'Dancing Script', cursive;
+      font-family: 'Canela Regular', cursive;
       font-size: 4rem;
       font-weight: 600;
       color: #d8ad83;
     }
 
     p.name {
-      font-family: 'Dancing Script', cursive;
+      font-family: 'Canela Regular', cursive;
       font-size: 2rem;
       color: #d8ad83;
     }
 
     p.and {
-      font-family: 'Clicker Script', cursive;
+      font-family: 'Canela Regular', cursive;
       font-size: 3rem;
       font-weight: 600;
     }
 
     @media only screen and (max-width: 511px) {
       p.quote {
-        font-family: 'Dancing Script', cursive;
+        font-family: 'Canela Regular', cursive;
         font-size: 1rem
       }
     }
 
     @media only screen and (min-width: 512px) and (max-width: 767px) {
       p.quote {
-        font-family: 'Dancing Script', cursive;
+        font-family: 'Canela Regular', cursive;
         font-size: 1.5rem
       }
     }
 
     @media only screen and (min-width: 768px) {
       p.quote {
-        font-family: 'Dancing Script', cursive;
+        font-family: 'Canela Regular', cursive;
         font-size: 2rem
       }
     }
 
     .timer {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Georgia', cursive;
       font-size: 2rem;
     }
 
     .location-title {
-      font-family: 'Dancing Script', cursive;
+      font-family: 'Canela Regular', cursive;
       font-size: 2rem;
       color: #d8ad83;
     }
 
     .icon {
-      font-size: 4rem;
+      width: 4rem;
+      height: 4rem;
       color: #d8ad83;
     }
 
@@ -183,7 +189,7 @@
     }
 
     .modal-title {
-      font-family: 'Dancing Script', cursive;
+      font-family: 'Canela Regular', cursive;
       font-size: 5rem;
       font-weight: 600;
       color: #d8ad83;
@@ -193,6 +199,7 @@
       object-fit: cover;
       object-position: center center;
       background-position: center;
+      filter: grayscale(10%) brightness(50%);
     }
 
     .background-primary {
@@ -255,134 +262,94 @@
             <img src="img/carousel-1.jpg" class="d-block w-100 carousel-img" alt="carousel-1" width="100%"
               height="100%">
           </div>
-          <div class="carousel-item w-100 h-100" data-bs-interval="3000">
-            <img src="img/carousel-2.jpg" class="d-block w-100 carousel-img" alt="carousel-2" width="100%"
-              height="100%">
-          </div>
-          <div class="carousel-item w-100 h-100" data-bs-interval="3000">
-            <img src="img/carousel-3.jpg" class="d-block w-100 carousel-img" alt="carousel-3" width="100%"
-              height="100%">
-          </div>
         </div>
       </div>
       <div
         class="position-absolute vh-100 vw-100 text-white d-flex justify-content-center align-items-center flex-column top-0 left-0">
         <div class="d-sm-flex mb-3 d-none">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
         </div>
         <h1 class="d-none">
-          The Wedding of Yusa & Yofan
+          The Wedding of Netta & Kresna
         </h1>
         <p class="h1">
           The Wedding of
         </p>
         <h2 class="name d-none d-sm-block">
-          Yusa & Yofan
+          Netta & Kresna
         </h2>
         <h3 class="name d-sm-none mb-0">
-          Yusa
+          Netta
         </h3>
         <h3 class="name d-sm-none mb-0">
           &
         </h3>
         <h3 class="name d-sm-none">
-          Yofan
+          Kresna
         </h3>
         <p class="date">
           <i>
-            Jum'at, 18 November 2022
+            Minggu, 03 Maret 2024
           </i>
         </p>
         <div class="d-sm-flex mb-3 d-none">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
-          <img
-            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='20px' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E"
-            alt="chevron" width="20" height="20">
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
+          <i class="text-white fs-1" data-feather="minus"></i>
         </div>
 
         <div class="bg-white rounded-3 px-5 py-2 mb-3 d-flex flex-column justify-content-start align-items-center" style="color: black;">
@@ -395,7 +362,7 @@
         </div>
 
         <button class="btn-open d-flex align-items-center justify-content-center gap-2 fs-5 border-0" id="open">
-          <i class='bx bxs-envelope-open'></i>
+          <i data-feather="mail"></i>
           Buka Undangan
         </button>
       </div>
@@ -409,21 +376,16 @@
         ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ
       </p>
 
-      <p class="text-center">
-        Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah semoga ridho-Mu tercurah
-        mengiringi pernikahan kami
+      <p class="text-center mb-4">
+        Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah semoga ridho-Mu tercurah mengiringi pernikahan kami
       </p>
-
-      <h2 class="about-us text-center">
-        Tentang Kami
-      </h2>
 
       <div class="d-flex align-items-center justify-content-center gap-3 gap-sm-5 flex-column flex-md-row">
         <div data-aos="fade-right" data-aos-duration="2000"
           class="d-flex flex-column align-items-center rounded-3 p-3 shadow background-gray">
-          <img src="img/yofan1.png" alt="yofan" width="300" height="auto">
+          <img src="img/kresna1.png" alt="kresna" width="300" height="auto">
           <p class="name">
-            Geofany Galindra, S.Kom
+            Wahyu Kresna Rachmadika
           </p>
           <p class="mb-0">
             <strong>
@@ -431,36 +393,51 @@
             </strong>
           </p>
           <p class="mb-0">
-            Alm. Bapak Agus Tri Raharjo
+            Bapak Agung Wahyono
           </p>
           <p class="mb-0">
             &
           </p>
           <p class="mb-0">
-            Ibu Ida Widiarti
+            Ibu Lia Agustinah
           </p>
         </div>
         <p data-aos="zoom-in" data-aos-duration="2000" class="and mb-0">&</p>
         <div data-aos="fade-left" data-aos-duration="2000"
           class="d-flex flex-column align-items-center rounded-3 p-3 shadow background-gray">
-          <img src="img/yusa1.png" alt="yusa" width="300" height="auto">
+          <img src="img/netta2.png" alt="netta" width="300" height="auto">
           <p class="name">
-            Nur Firdausa R., S.KM
+            Arnetta Firstianti Widodo
           </p>
           <p class="mb-0">
             <strong>
               Putri Dari
             </strong>
           </p>
-          <p class="mb-0">
-            Bapak Maratim
-          </p>
-          <p class="mb-0">
-            &
-          </p>
-          <p class="mb-0">
-            Ibu Hindun Juwariyah
-          </p>
+          <div class="d-flex gap-4">
+            <div class="text-center">
+              <p class="mb-0">
+                Bapak Budi Widodo
+              </p>
+              <p class="mb-0">
+                &
+              </p>
+              <p class="mb-0">
+                Ibu Anik Sulistyowati
+              </p>
+            </div>
+            <div class="text-center">
+              <p class="mb-0">
+                Bapak I G.A. Mahendra
+              </p>
+              <p class="mb-0">
+                &
+              </p>
+              <p class="mb-0">
+                Ibu Triwida Prameswari
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </article>
@@ -511,7 +488,7 @@
         <div data-aos="fade-up" data-aos-duration="2000"
           class="d-flex flex-column align-items-center rounded-3 p-3 shadow background-gray">
           <div class="rounded-circle d-flex align-items-center justify-content-center background-handshake">
-            <img src="img/handshake.png" alt="handshake" width="100" height="74">
+            <img src="img/handshake.png" alt="handshake" width="82" height="76">
           </div>
 
           <h3 class="location-title">
@@ -521,64 +498,32 @@
           </h3>
 
           <div class="d-flex align-items-center justify-content-around gap-4">
-            <div class="d-flex flex-column text-center">
+            <div class="d-flex flex-column align-items-center">
               <hr>
-              <i class="bx bxs-calendar icon"></i>
+              <i class="icon" data-feather="calendar"></i>
               <p class="date">
                 <i>
-                  Jum'at, 18 November 2022
+                  Minggu, 03 Maret 2024
                 </i>
               </p>
               <hr>
             </div>
-            <div class="d-flex flex-column text-center">
+            <div class="d-flex flex-column align-items-center">
               <hr>
-              <i class="bx bxs-time icon"></i>
+              <i class="icon" data-feather="clock"></i>
               <p class="date">
                 <i>
-                  09.00 WIB - 11.00 WIB
-                </i>
-              </p>
-              <hr>
-            </div>
-          </div>
-
-          <div class="rounded-circle d-flex align-items-center justify-content-center background-handshake">
-            <img src="img/wedding.png" alt="wedding" width="80" height="76">
-          </div>
-
-          <h3 class="location-title">
-            <i>
-              Resepsi Pernikahan
-            </i>
-          </h3>
-
-          <div class="d-flex align-items-center justify-content-around gap-4">
-            <div class="d-flex flex-column text-center">
-              <hr>
-              <i class="bx bxs-calendar icon"></i>
-              <p class="date">
-                <i>
-                  Jum'at, 18 November 2022
-                </i>
-              </p>
-              <hr>
-            </div>
-            <div class="d-flex flex-column text-center">
-              <hr>
-              <i class="bx bxs-time icon"></i>
-              <p class="date">
-                <i>
-                  13.00 WIB - 15.00 WIB
+                  08.30 WIB - Selesai
                 </i>
               </p>
               <hr>
             </div>
           </div>
+          <hr>
 
-          <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=The Wedding of Yusa and Yofan&details&dates=20221118T130000/20221118T150000&location=Jl. Sindujoyo Gg. XVIA No. 11, Kec. Gresik, Kabupaten Gresik, Jawa Timur" rel="nofollow noopener noreferrer external"
+          <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=The Wedding of Netta and Kresna&details&dates=20221118T130000/20221118T150000&location=Jl. Sindujoyo Gg. XVIA No. 11, Kec. Gresik, Kabupaten Gresik, Jawa Timur" rel="nofollow noopener noreferrer external"
             class="btn-map d-flex align-items-center justify-content-center gap-1 mb-3 transition" target="_blank">
-            <i class='bx bxs-calendar-heart fs-4'></i>
+            <i data-feather="calendar" style="width: 1.5rem; height: 1.5rem;"></i>
             <p class="mb-0 fs-5">
               <strong>
                 Ingatkan Saya di Google Calendar
@@ -590,38 +535,19 @@
             Lokasi
           </h2>
           <p class="date text-center">
-            Jl. Sindujoyo Gg. XVIA No. 11, Kec. Gresik, Kabupaten Gresik, Jawa Timur
-          </p>
-
-          <p style="font-size: 16px;">
-            <strong>
-              (*Note: Yang Membawa Mobil Harap Parkir Di Tempat Parkir Mobil Pasar Krempyeng)
-            </strong>
+            <strong>Masjid Roudhotul Muchlisin</strong><br>Jl. Gajah Mada No.165, Kaliwates Kidul, Kaliwates, Kec. Kaliwates, Kabupaten Jember, Jawa Timur 68131
           </p>
 
           <div data-aos="fade-up" data-aos-duration="2000" class="container-map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198.77743588563212!2d112.65165881670512!3d-7.149571429760794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd801051b9d94e7%3A0x87758756b2c045f7!2spos%20lumpur%20Gg2%20b!5e1!3m2!1sen!2sid!4v1655477969718!5m2!1sen!2sid"
-              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15796.982634794807!2d113.6811849!3d-8.1779893!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6941bb04e1295%3A0x67d1817532a5b888!2sMasjid%20Roudhotul%20Muchlisin!5e0!3m2!1sid!2sid!4v1706110823353!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
 
-          <a href="https://goo.gl/maps/sVaLYgnBna9youZA8" rel="nofollow noopener noreferrer external"
+          <a href="https://maps.app.goo.gl/e7qpeRcuS89Fbv6F7" rel="nofollow noopener noreferrer external"
             class="btn-map d-flex align-items-center justify-content-center gap-1 mb-3 transition" target="_blank">
-            <i class='bx bxs-map fs-4'></i>
+            <i data-feather="map-pin" style="width: 1.5rem; height: 1.5rem;"></i>
             <p class="mb-0 fs-5">
               <strong>
                 Buka Peta
-              </strong>
-            </p>
-          </a>
-
-          <a href="https://goo.gl/maps/7kiRiYWHJdxn9Zki9" rel="nofollow noopener noreferrer external"
-            class="btn-map d-flex align-items-center justify-content-center gap-1 transition" target="_blank">
-            <i class='bx bxs-car fs-4'></i>
-            <p class="mb-0 fs-5">
-              <strong>
-                Lokasi Parkir Mobil
               </strong>
             </p>
           </a>
@@ -641,7 +567,7 @@
       </p>
 
       <p class="text-center name-closing">
-        Yusa & Yofan
+        Netta & Kresna
       </p>
 
       <p class="text-center">
@@ -649,60 +575,60 @@
       </p>
     </article>
 
-    <article id="gallery" class="container mx-auto py-5 d-none">
+    <!-- <article id="gallery" class="container mx-auto py-5 d-none">
       <h2 class="about-us text-center">
         Gallery
       </h2>
       <div class="row">
-        <div class="col-6 col-md-3" data-aos="fade-right" data-aos-duration="2000">
+        <div class="col-6 col-md-3 pb-4" data-aos="fade-right" data-aos-duration="2000">
           <img src="img/gal-1.jpg" alt="gal-1" width="100%" height="auto">
         </div>
-        <div class="col-6 col-md-3" data-aos="fade-right" data-aos-duration="2000">
+        <div class="col-6 col-md-3 pb-4" data-aos="fade-right" data-aos-duration="2000">
           <img src="img/gal-2.jpg" alt="gal-2" width="100%" height="auto">
         </div>
-        <div class="col-6 col-md-3" data-aos="fade-left" data-aos-duration="2000">
+        <div class="col-6 col-md-3 pb-4" data-aos="fade-left" data-aos-duration="2000">
           <img src="img/gal-3.jpg" alt="gal-3" width="100%" height="auto">
         </div>
-        <div class="col-6 col-md-3" data-aos="fade-left" data-aos-duration="2000">
+        <div class="col-6 col-md-3 pb-4" data-aos="fade-left" data-aos-duration="2000">
           <img src="img/gal-4.jpg" alt="gal-4" width="100%" height="auto">
         </div>
-        <div class="col-6 col-md-3" data-aos="fade-right" data-aos-duration="2000">
+        <div class="col-6 col-md-3 pb-4" data-aos="fade-right" data-aos-duration="2000">
           <img src="img/gal-5.jpg" alt="gal-5" width="100%" height="auto">
         </div>
-        <div class="col-6 col-md-3" data-aos="fade-right" data-aos-duration="2000">
+        <div class="col-6 col-md-3 pb-4" data-aos="fade-right" data-aos-duration="2000">
           <img src="img/gal-6.jpg" alt="gal-6" width="100%" height="auto">
         </div>
-        <div class="col-6 col-md-3" data-aos="fade-left" data-aos-duration="2000">
+        <div class="col-6 col-md-3 pb-4" data-aos="fade-left" data-aos-duration="2000">
           <img src="img/gal-7.jpg" alt="gal-7" width="100%" height="auto">
         </div>
-        <div class="col-6 col-md-3" data-aos="fade-left" data-aos-duration="2000">
+        <div class="col-6 col-md-3 pb-4" data-aos="fade-left" data-aos-duration="2000">
           <img src="img/gal-8.jpg" alt="gal-8" width="100%" height="auto">
         </div>
-        <div class="col-6 col-md-3" data-aos="fade-right" data-aos-duration="2000">
+        <div class="col-6 col-md-3 pb-4" data-aos="fade-right" data-aos-duration="2000">
           <img src="img/gal-9.jpg" alt="gal-9" width="100%" height="auto">
         </div>
-        <div class="col-6 col-md-3" data-aos="fade-right" data-aos-duration="2000">
+        <div class="col-6 col-md-3 pb-4" data-aos="fade-right" data-aos-duration="2000">
           <img src="img/gal-10.jpg" alt="gal-10" width="100%" height="auto">
         </div>
-        <div class="col-6 col-md-3" data-aos="fade-left" data-aos-duration="2000">
+        <div class="col-6 col-md-3 pb-4" data-aos="fade-left" data-aos-duration="2000">
           <img src="img/gal-11.jpg" alt="gal-11" width="100%" height="auto">
         </div>
-        <div class="col-6 col-md-3" data-aos="fade-left" data-aos-duration="2000">
+        <div class="col-6 col-md-3 pb-4" data-aos="fade-left" data-aos-duration="2000">
           <img src="img/gal-12.jpg" alt="gal-12" width="100%" height="auto">
         </div>
-        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-duration="2000">
+        <div class="col-12 col-md-4 pb-4" data-aos="fade-up" data-aos-duration="2000">
           <img src="img/gal-13.jpg" alt="gal-13" width="100%" height="auto">
         </div>
-        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-duration="2000">
+        <div class="col-12 col-md-4 pb-4" data-aos="fade-up" data-aos-duration="2000">
           <img src="img/gal-14.jpg" alt="gal-14" width="100%" height="auto">
         </div>
-        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-duration="2000">
+        <div class="col-12 col-md-4 pb-4" data-aos="fade-up" data-aos-duration="2000">
           <img src="img/gal-15.jpg" alt="gal-15" width="100%" height="auto">
         </div>
       </div>
-    </article>
+    </article> -->
 
-    <article id="gift" class="container py-5 d-none">
+    <!-- <article id="gift" class="container py-5 d-none">
       <h2 class="about-us text-center">
         Wedding Gift
       </h2>
@@ -755,50 +681,7 @@
           </p>
         </a>
       </div>
-    </article>
-
-    <article id="covid" class="container py-5 d-none">
-      <p class="text-center">
-        Dikarenakan sedang dalam masa pandemi, tanpa mengurangi rasa hormat, diharapkan seluruh tamu dapat mengikuti protokol kesehatan yang dianjurkan oleh pemerintah
-      </p>
-      <div class="row my-3">
-        <div class="col-12 col-md-6 col-lg-3">
-          <div data-aos="fade-right" data-aos-duration="2000" class="rounded-3 p-3 h-100 shadow background-gray d-flex flex-column align-items-center justify-content-center">
-            <img src="img/covid-1.png" alt="covid-1" width="75" height="75" class="mb-2">
-            <p>
-              Gunakan Masker
-            </p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div data-aos="fade-right" data-aos-duration="2000" class="rounded-3 p-3 h-100 shadow background-gray d-flex flex-column align-items-center justify-content-center">
-            <img src="img/covid-2.png" alt="covid-2" width="75" height="75" class="mb-2">
-            <p>
-              Jaga Jarak
-            </p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div data-aos="fade-left" data-aos-duration="2000" class="rounded-3 p-3 h-100 shadow background-gray d-flex flex-column align-items-center justify-content-center">
-            <img src="img/covid-3.png" alt="covid-3" width="75" height="75" class="mb-2">
-            <p>
-              Suhu Tubuh Normal
-            </p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div data-aos="fade-left" data-aos-duration="2000" class="rounded-3 p-3 h-100 shadow background-gray d-flex flex-column align-items-center justify-content-center">
-            <img src="img/covid-4.png" alt="covid-4" width="75" height="75" class="mb-2">
-            <p>
-              Cuci Tangan
-            </p>
-          </div>
-        </div>
-      </div>
-    </article>
+    </article> -->
 
   </main>
   <footer id="footer" class="w-100 text-white d-flex justify-content-center py-3 background-dark d-none">
@@ -815,8 +698,12 @@
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
   <script>
-    var end = new Date('11/18/2022 9:0 AM');
+    feather.replace();
+  </script>
+  <script>
+    var end = new Date('03/03/2024 9:0 AM');
     var _second = 1000;
     var _minute = _second * 60;
     var _hour = _minute * 60;
@@ -864,10 +751,10 @@
       about.classList.remove("d-none");
       quote.classList.remove("d-none");
       times.classList.remove("d-none");
-      gallery.classList.remove("d-none");
-      gift.classList.remove("d-none");
-      footer.classList.remove("d-none");
-      covid.classList.remove("d-none");
+      // gallery.classList.remove("d-none");
+      // gift.classList.remove("d-none");
+      // footer.classList.remove("d-none");
+      // covid.classList.remove("d-none");
       AOS.init(
         {
           once: true
@@ -877,7 +764,7 @@
       separator.scrollIntoView();
     });
   </script>
-  <script>
+  <!-- <script>
     function copyBca() {
       navigator.clipboard.writeText("2640399905")
       .then(() => {
@@ -901,7 +788,7 @@
     const to = new URLSearchParams(window.location.search);
     var kepada = document.getElementById("kepada");
     kepada.textContent = to.get('to');;
-  </script>
+  </script> -->
 </body>
 
 </html>
